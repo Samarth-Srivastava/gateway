@@ -7,6 +7,8 @@ const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
 const express_1 = __importDefault(require("express"));
 var app = (0, express_1.default)();
+const cors_1 = __importDefault(require("cors"));
+app.use((0, cors_1.default)());
 const router_1 = __importDefault(require("./router"));
 var bodyParser = require('body-parser');
 const db_1 = __importDefault(require("./db"));

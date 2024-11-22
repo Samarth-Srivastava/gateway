@@ -4,6 +4,10 @@ dotenv.config();
 import express from "express";
 var app = express();
 
+import cors from "cors";
+app.use(cors());
+
+
 import router from "./router";
 var bodyParser = require('body-parser');
 
